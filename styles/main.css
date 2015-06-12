@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,100italic,400);
+
 /*
 --------------------------------------------------------------------------
 Import
@@ -7130,6 +7132,8 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 * {
@@ -7168,6 +7172,11 @@ ul {
 --------------------------------------------------------------------------
 */
 
+.robo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
 /*
 --------------------------------------------------------------------------
  Styles
@@ -7186,14 +7195,13 @@ ul {
 }
 
 .rotate-txt-slide {
-  padding: 80px 0;
+  padding-top: 150px;
   color: #fafafa;
   background-color: #ff3264;
 }
 
 .rotate-txt-slide .rw-sentence span {
-  font-weight: bold;
-  color: #2962ff;
+  color: #00bcd4;
 }
 
 .rotate-txt-slide .rw-words {
@@ -7243,9 +7251,20 @@ ul {
 }
 
 .sentence {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 #swap {
-  color: #00b09f;
+  color: #ffec00;
+}
+
+.txt-box,
+.sentence {
+  width: 1000px;
+  margin: auto;
+}
+
+.txt-box h1,
+.sentence h1 {
+  font-size: 3.6em;
 }

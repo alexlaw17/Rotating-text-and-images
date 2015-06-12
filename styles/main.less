@@ -5,6 +5,7 @@ Import
 */
 
 @import "../bower_components/bootstrap/less/bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,100italic,400);
 
 /*
 --------------------------------------------------------------------------
@@ -19,6 +20,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    .robo;
 }
 
 * {
@@ -54,18 +56,26 @@ ul {
 --------------------------------------------------------------------------
 */
 
-@white: #FAFAFA;
+@white: 	#FAFAFA;
 @lightgray: #E0E0E0;
-@gray: #616161;
-@black: #212121;
-@cyan: #00BCD4;
-@blue: #2962FF;
-@green: #009688;
-@red: #FF3264;
+@gray: 		#616161;
+@black: 	#212121;
+@cyan: 		#00BCD4;
+@blue: 		#2962FF;
+@green: 	#009688;
+@red: 		#FF3264;
+@yellow: 	#FFEC00;
+@purp: 		#4527A0;
+
 @xs: 480px;
 @sm: 768px;
 @md: 992px;
 @lg: 1200px;
+
+.robo {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
 
 /*
 --------------------------------------------------------------------------
@@ -87,11 +97,10 @@ ul {
 .rotate-txt-slide {
 	background-color: @red;
 	color: @white;
-	padding: 80px 0;
+	padding-top: 150px;
 	.rw-sentence {
 		span {
-			color: @blue;
-			font-weight: bold;
+			color: @cyan;
 		}
 	}
 	.rw-words {
@@ -139,10 +148,22 @@ ul {
 }
 
 .sentence {
-	margin-top: 50px;
+	padding-top: 50px;
 
 }
 
 #swap {
-	color: lighten(@green,5%);
+	color: @yellow;
+}
+
+.txt-box, .sentence {
+	width: 1000px;
+	margin: auto;
+	h1 {
+		font-size: 3.6em;
+	}
+}
+
+.hide {
+	// display: none;
 }
