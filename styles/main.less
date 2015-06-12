@@ -1,0 +1,148 @@
+/*
+--------------------------------------------------------------------------
+Import
+--------------------------------------------------------------------------
+*/
+
+@import "../bower_components/bootstrap/less/bootstrap.less";
+
+/*
+--------------------------------------------------------------------------
+ Basic Attributes
+--------------------------------------------------------------------------
+*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    outline: none !important;
+    &:focus, &:hover, &:active {
+        outline: none !important;
+    }
+}
+
+a {
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/*
+--------------------------------------------------------------------------
+ Variables
+--------------------------------------------------------------------------
+*/
+
+@white: #FAFAFA;
+@lightgray: #E0E0E0;
+@gray: #616161;
+@black: #212121;
+@cyan: #00BCD4;
+@blue: #2962FF;
+@green: #009688;
+@red: #FF3264;
+@xs: 480px;
+@sm: 768px;
+@md: 992px;
+@lg: 1200px;
+
+/*
+--------------------------------------------------------------------------
+ Styles
+--------------------------------------------------------------------------
+*/
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.frame {
+	width: 100%;
+	height: 90%;
+	position: relative;
+}
+
+.rotate-txt-slide {
+	background-color: @red;
+	color: @white;
+	padding: 80px 0;
+	.rw-sentence {
+		span {
+			color: @blue;
+			font-weight: bold;
+		}
+	}
+	.rw-words {
+		display: inline;
+		span {
+			position: absolute;
+			opacity: 0;
+			overflow: hidden;
+			width: 100%;
+			animation: rotateWords 3s linear infinite 0s;
+			&:nth-child(1) {
+				animation-delay: 1s;
+			}
+			&:nth-child(2) {
+				animation-delay: 2s;
+			}
+			&:nth-child(3) {
+				animation-delay: 3s;
+			}
+
+			@keyframes rotateWords {
+    			0% { 
+    				opacity: 1; 
+    				animation-timing-function: linear;
+    				height: 0px; 
+    			}
+
+    			8% { 
+    				opacity: 1; 
+    			}
+    			19% { 
+    				opacity: 1; 
+    				height: 60px; 
+    			}
+				25% { 
+					opacity: 0; 
+					height: 60px; 
+				}
+    			100% { 
+    				opacity: 0; 
+    			}
+			}
+		}
+	}
+}
+
+.sentence {
+	margin-top: 50px;
+
+}
+
+#swap {
+	color: lighten(@green,5%);
+}
