@@ -23,6 +23,18 @@ $(function() {
     }
     setInterval(rotateWords, 470);
 
-
+    function aboutSlide() {
+        var slides = $('.paper')
+        var current = 0;
+        $('#next').click(function() {
+            current = ++current % slides.length;
+            $('.paper-wrapper').animate({
+                    'left': -(slides.eq(current).position().left)
+                },
+                600
+            );
+        });
+    }
+    aboutSlide();
 
 });

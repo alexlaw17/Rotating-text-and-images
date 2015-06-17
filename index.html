@@ -2,8 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
@@ -14,15 +17,16 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-  </head>
-  <body>
-  <div class="wrapper">
-    <div class="frame rotate-txt-slide">
-      <div class="container">
-        <div class="row">
-          <div class="txt-box">
-            <h4>CSS3 Text Rotate</h4>
-            <h1 class="rw-sentence">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="frame rotate-txt-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="txt-box">
+                        <h4>CSS3 Text Rotate</h4>
+                        <h1 class="rw-sentence">
               Hello my name is Alex Law. This is my&nbsp;
               <div class="rw-words">
                 <span>Design</span>
@@ -30,40 +34,68 @@
                 <span>Hobby</span>
               </div>
             </h1>
-          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="sentence">
+                        <h4>Simple jQuery Rotate Words</h4>
+                        <h1>Hello my name is <span id="swap">Alex</span>.</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="txt-change">
+                        <h1 class="hide-txt">This is first Sentence</h1>
+                        <h1 class="hide-txt">NBA WOOT WOOT</h1>
+                        <h1 class="hide-txt">Hello World</h1>
+                        <h1 class="hide-txt">Testing 1, 2, 3</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="sentence">
-            <h4>Simple jQuery Rotate Words</h4>
-            <h1>Hello my name is <span id="swap">Alex</span>.</h1>
-          </div>
+        <div class="frame">
+            <div class="about-container">
+                <div id="next" class="button arrow-right"><i class="fa fa-caret-right"></i></div>
+                <div class="about-paper">
+                    <div class="paper-wrapper">
+                        <div id="paper-one" class="paper">
+                            <div class="paper-heading bio">
+                                <h1>This</h1>
+                            </div>
+                            <div class="paper-content">
+                                <p>Lorem ipsum Do deserunt amet cupidatat irure mollit ea ea esse aliqua velit reprehenderit nisi labore proident culpa laborum non est et id do culpa ullamco culpa commodo eiusmod in proident aliquip ex aliqua ex pariatur officia dolor eu incididunt fugiat laboris elit quis ea nostrud sit in enim in pariatur occaecat velit aliqua reprehenderit incididunt fugiat esse culpa nisi sed ad nulla ut eiusmod Excepteur eiusmod ullamco officia ut nostrud et ut anim anim culpa ex id irure in non adipisicing dolore minim ut mollit irure nulla in elit nostrud sed elit pariatur Ut sunt commodo incididunt ex laborum nisi ex sunt labore in do est labore in nulla cillum in proident veniam et eiusmod fugiat in tempor Duis proident Ut consequat qui labore consectetur eu qui in laboris do aliqua ea aliquip eiusmod do voluptate do incididunt elit exercitation sunt dolore amet cupidatat mollit amet dolor in commodo in nulla reprehenderit laborum voluptate esse magna proident cupidatat velit aliqua ea culpa ad Duis mollit nostrud exercitation enim velit esse laborum nulla eiusmod fugiat minim tempor occaecat do labore officia dolore cillum enim veniam labore labore irure consequat elit Excepteur Ut ex nulla cupidatat ut sit </p>
+                            </div>
+                        </div>
+                        <div id="paper-two" class="paper">
+                            <div class="paper-heading design">
+                                <h1>is a</h1>
+                            </div>
+                            <div class="paper-content">
+                                <p>Lorem ipsum Do deserunt amet cupidatat irure mollit ea ea esse aliqua velit reprehenderit nisi labore proident culpa laborum non est et id do culpa ullamco culpa commodo eiusmod in proident aliquip ex aliqua ex pariatur officia dolor eu incididunt fugiat laboris elit quis ea nostrud sit in enim in pariatur occaecat velit aliqua reprehenderit incididunt fugiat esse culpa nisi sed ad nulla ut eiusmod Excepteur eiusmod ullamco officia ut nostrud et ut anim anim culpa ex id irure in non adipisicing dolore minim ut mollit irure nulla in elit nostrud sed elit pariatur Ut sunt commodo incididunt ex laborum nisi ex sunt labore in do est labore in nulla cillum in proident veniam et eiusmod fugiat in tempor Duis proident Ut consequat qui labore consectetur eu qui in laboris do aliqua ea aliquip eiusmod do voluptate do incididunt elit exercitation sunt dolore amet cupidatat mollit amet dolor in commodo in nulla reprehenderit laborum voluptate esse magna proident cupidatat velit aliqua ea culpa ad Duis mollit nostrud exercitation enim velit esse laborum nulla eiusmod fugiat minim tempor occaecat do labore officia dolore cillum enim veniam labore labore irure consequat elit Excepteur Ut ex nulla cupidatat ut sit </p>
+                            </div>
+                        </div>
+                        <div id="paper-three" class="paper">
+                            <div class="paper-heading frontend">
+                                <h1>Simple Slider</h1>
+                            </div>
+                            <div class="paper-content">
+                                <p>Lorem ipsum Do deserunt amet cupidatat irure mollit ea ea esse aliqua velit reprehenderit nisi labore proident culpa laborum non est et id do culpa ullamco culpa commodo eiusmod in proident aliquip ex aliqua ex pariatur officia dolor eu incididunt fugiat laboris elit quis ea nostrud sit in enim in pariatur occaecat velit aliqua reprehenderit incididunt fugiat esse culpa nisi sed ad nulla ut eiusmod Excepteur eiusmod ullamco officia ut nostrud et ut anim anim culpa ex id irure in non adipisicing dolore minim ut mollit irure nulla in elit nostrud sed elit pariatur Ut sunt commodo incididunt ex laborum nisi ex sunt labore in do est labore in nulla cillum in proident veniam et eiusmod fugiat in tempor Duis proident Ut consequat qui labore consectetur eu qui in laboris do aliqua ea aliquip eiusmod do voluptate do incididunt elit exercitation sunt dolore amet cupidatat mollit amet dolor in commodo in nulla reprehenderit laborum voluptate esse magna proident cupidatat velit aliqua ea culpa ad Duis mollit nostrud exercitation enim velit esse laborum nulla eiusmod fugiat minim tempor occaecat do labore officia dolore cillum enim veniam labore labore irure consequat elit Excepteur Ut ex nulla cupidatat ut sit </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-<!--           <div class="txt-change">
-            <h1 class="">This is first Sentence</h1>
-            <h1 class="">NBA WOOT WOOT</h1>
-            <h1 class="">Hello World</h1>
-            <h1 class="">Testing 1, 2, 3</h1>
-          </div> -->
-        </div>
-      </div>
     </div>
-  </div>
-
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-
     </script>
-
-
-
-        <!-- build:js scripts/main.js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

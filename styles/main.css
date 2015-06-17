@@ -7131,9 +7131,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 * {
@@ -7267,4 +7270,166 @@ ul {
 .txt-box h1,
 .sentence h1 {
   font-size: 3.6em;
+}
+
+.hide-txt {
+  display: none;
+}
+
+.button {
+  display: block;
+  width: 45px;
+  height: 45px;
+  padding-top: 8px;
+  font-size: 22px;
+  color: $white;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(34, 34, 34, 0.2);
+  transition: all 0.3s cubic-bezier(0, 0.89, 0, 1);
+}
+
+.button:hover {
+  padding-top: 5px;
+  font-size: 25px;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 10px rgba(34, 34, 34, 0.2);
+}
+
+.button:active {
+  padding-top: 9px;
+  font-size: 21px;
+  color: white;
+  transform: translateY(4px);
+  box-shadow: 0 0px 4px rgba(34, 34, 34, 0.2);
+}
+
+.button:visted {
+  color: white;
+}
+
+.button:focus {
+  color: white;
+}
+
+.button.twitter {
+  background-color: #4CB5FF;
+}
+
+.button.google {
+  background-color: #E93045;
+}
+
+.button.tumblr {
+  background-color: #2C4762;
+}
+
+.button.github {
+  background-color: #4E277A;
+}
+
+.button.arrow-down {
+  position: relative;
+  top: 92vh;
+  z-index: 9;
+  margin: auto;
+  background-color: pink;
+  opacity: 0;
+}
+
+.button.arrow-right {
+  background-color: green;
+}
+
+.about-container {
+  position: relative;
+  width: 600px;
+  margin: 80px auto;
+}
+
+@media (max-width: 650px) {
+  .about-container {
+    width: 450px;
+  }
+}
+
+.about-container h1 {
+  color: white;
+}
+
+.arrow-right {
+  position: absolute;
+  right: 3%;
+  bottom: -20px;
+  z-index: 9999;
+}
+
+.about-paper {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: -1px 9px 25px -3px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 650px) {
+  .about-paper {
+    width: 450px;
+  }
+}
+
+.about-paper p {
+  font-size: 16px;
+}
+
+.about-paper .paper-heading {
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.about-paper .paper-heading.bio {
+  background-color: teal;
+}
+
+.about-paper .paper-heading.design {
+  background-color: purple;
+}
+
+.about-paper .paper-heading.frontend {
+  background-color: blue;
+}
+
+.about-paper .paper-content {
+  width: 100%;
+  padding: 20px;
+}
+
+.paper-wrapper {
+  position: relative;
+  left: 0;
+  width: 3000px;
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .paper-wrapper {
+    width: 1350px;
+  }
+}
+
+.paper {
+  float: left;
+  width: 600px;
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .paper {
+    width: 450px;
+  }
 }
