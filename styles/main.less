@@ -230,8 +230,9 @@ ul {
 
 
  .about-container {
+    padding-top: 80px;
         width: 600px;
-        margin: 80px auto;
+        margin: 0 auto;
         position: relative;
         @media (max-width:650px) {
             width: 450px;
@@ -300,5 +301,34 @@ ul {
 
         @media (max-width:650px) {
             width: 450px;
+        }
+    }
+
+    .slider1 {
+        background-color: @cyan;
+    }
+
+    .slider2 {
+        background-color: @green;
+        padding-top: 80px;
+    }
+
+
+
+    #slider {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        margin: auto;
+        .slides {
+            position: relative;
+            width: 1200px;
+            display: block;
+            height: 200px;
+            .slide {
+                float: left;
+                width: 300px;
+                height: 200px;
+            }
         }
     }

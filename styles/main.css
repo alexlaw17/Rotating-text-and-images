@@ -7345,7 +7345,8 @@ ul {
 .about-container {
   position: relative;
   width: 600px;
-  margin: 80px auto;
+  padding-top: 80px;
+  margin: 0 auto;
 }
 
 @media (max-width: 650px) {
@@ -7432,4 +7433,33 @@ ul {
   .paper {
     width: 450px;
   }
+}
+
+.slider1 {
+  background-color: #00bcd4;
+}
+
+.slider2 {
+  padding-top: 80px;
+  background-color: #009688;
+}
+
+#slider {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#slider .slides {
+  position: relative;
+  display: block;
+  width: 1200px;
+  height: 200px;
+}
+
+#slider .slides .slide {
+  float: left;
+  width: 300px;
+  height: 200px;
 }

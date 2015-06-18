@@ -1,8 +1,8 @@
 //Array of words
 var words = [
-    'Bobby',
-    'Jacky',
-    'Tiffany',
+    'Rocky',
+    'Colt',
+    'Tum Tum',
     'Alex' //If doing one word Add the last one to the element in the html
 ];
 
@@ -36,5 +36,38 @@ $(function() {
         });
     }
     aboutSlide();
+    //slide version 2 auto
 
+    //customize speed
+    var width = 300;
+    var animationSpeed = 1000;
+    var currentSlide = 1;
+    //cache DOM
+    var $slider = $('#slider');
+    var $slideContainer = $slider.find('.slides');
+    var $slide = $slideContainer.find('.slide');
+    var interval;
+
+    function startSlider() {
+        interval = setInterval(function() {
+            $slideContainer.animate({
+                'left': '-=' + width
+            }, animationSpeed, function() {
+                currentSlide++;
+                if (currentSlide === $slide.length - 1) {
+                    currentSlide = 1;
+                    $slideContainer.animate({
+                        'left': '0'
+                    }, animationSpeed);
+                }
+            });
+        }, 1000);
+    }
+
+    function stopSlider() {
+        clearInterval(interval)
+    }
+
+    $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
+    startSlider();
 });
